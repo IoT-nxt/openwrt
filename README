@@ -32,3 +32,33 @@ Sunshine!
 	http://www.openwrt.org
 
 
+
+IOTNXT NOTES
+============
+
+https://openwrt.org/docs/guide-developer/quickstart-build-images
+https://openwrt.org/docs/guide-user/additional-software/beginners-build-guide
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install subversion g++ zlib1g-dev build-essential git python rsync man-db
+sudo apt-get install libncurses5-dev gawk gettext unzip file libssl-dev wget zip time
+
+./scripts/feeds update -a
+./scripts/feeds install -a
+
+copy backup /etc to /files/etc
+
+make menuconfig
+
+
+SMART/RG 400ac
+-----------------
+
+Target System: Broadcom BCM47xx/53xx (ARM)
+Target System: SmartRG SR400ac
+
+Make sure to select LuCI
+
+
+make
